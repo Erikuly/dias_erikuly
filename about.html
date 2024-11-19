@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>E.Dias</title>
+    <link rel="icon" href="5773759.ico" type="image/png">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <button class="menu-button" onclick="toggleSection('rezume')"><a href="index.html">Резюме</a></button>
+            <button class="menu-button" onclick="toggleSection('about')"><a href="about.html">Обо мне</a></button>
+            <button class="menu-button" onclick="toggleSection('certificates')"><a href="certificates.html">Сертификаты</a></button>
+        </nav>
+    </header>
+    
+    <section class="intro">
+        <h2>Привет! Меня зовут Ескендір Диас Ерікұлы</h2>
+        <p>Мне 20 лет, я студент 4 курса Caspian University. Я родился в городе Сарканд, но сейчас проживаю в Алматы.</p>
+    </section>
+
+    <section class="about-me">
+        <h3>Обо мне</h3>
+        <p>Я являюсь frontend разработчиком и базово владею языками программирования: C++, Java, Python, SQL, NoSQL.</p>
+        <p>Мои хобби: играю на гитаре, люблю играть в игры, продаю сайты.</p>
+        <p>Ранее занимался спортом: боксом и тяжёлой атлетикой, имею звание КМС по тяжёлой атлетике.</p>
+        <p>Мои параметры: рост 173 см, вес 78 кг.</p>
+    </section>
+
+    <section class="contact">
+        <button id="showMoreBtn">Подробнее</button>
+        <p id="moreInfo" style="display: none;">
+            Я всегда открыт к новым возможностям и проектам. Если вам нужно сотрудничество или просто хотите поболтать — пишите мне!
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Все права защищены Диасом</p>
+    </footer>
+
+    <script src="about.js"></script>
+</body>

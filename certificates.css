@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #cc00ff;
+}
+
+.menu-button {
+    background-color: #39d3d6;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.menu-button:hover {
+    background-color: #1aa9a9;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #d800f9, #f40c0c);
+    color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #39d3d6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.certificates {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: #0cfbff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate a img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.5);
+}
+
+.certificate-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #444;
+}
+
+.certificate-text p {
+    margin: 5px 0 10px;
+    color: #666;
+}
+
+.certificate-text a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.certificate-text a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .menu-button {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .profile {
+        font-size: 16px;
+    }
+
+    .photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    .container {
+        margin: 20px 10px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Для маленьких экранов */
+@media (max-width: 480px) {
+    .photo {
+        width: 120px;
+        height: 150px;
+    }
+
+    .menu-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .tab-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .social-link {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}

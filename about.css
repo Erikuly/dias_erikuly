@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #d800f9, #f40c0c);
+    color: #000000;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #cc00ff;
+}
+
+.menu-button {
+    background-color: #39d3d6;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.menu-button:hover {
+    background-color: #1aa9a9;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #cc00ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #39d3d6;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1aa9a9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .menu-button {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .profile {
+        font-size: 16px;
+    }
+
+    .photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    .container {
+        margin: 20px 10px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Для маленьких экранов */
+@media (max-width: 480px) {
+    .photo {
+        width: 120px;
+        height: 150px;
+    }
+
+    .menu-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .tab-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .social-link {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
